@@ -93,7 +93,7 @@ class HTTPProvider(BaseProvider, _HTTPProviderCore):
                 Note: ``parsers`` should line up with ``reqs``.
 
         Example:
-            >>> from solana.rpc.providers.http import HTTPProvider
+            >>> from solanasdk.rpc.providers.http import HTTPProvider
             >>> from solders.rpc.requests import GetBlockHeight, GetFirstAvailableBlock
             >>> from solders.rpc.responses import GetBlockHeightResp, GetFirstAvailableBlockResp
             >>> provider = HTTPProvider("https://api.devnet.solana.com")

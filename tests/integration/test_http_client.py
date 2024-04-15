@@ -12,11 +12,11 @@ from solders.rpc.responses import GetBlockHeightResp, GetFirstAvailableBlockResp
 from solders.transaction import VersionedTransaction
 from spl.token.constants import WRAPPED_SOL_MINT
 
-from solana.rpc.api import Client
-from solana.rpc.commitment import Confirmed, Finalized, Processed
-from solana.rpc.core import RPCException, TransactionExpiredBlockheightExceededError
-from solana.rpc.types import DataSliceOpts, TxOpts
-from solana.transaction import Transaction
+from solanasdk.rpc.api import Client
+from solanasdk.rpc.commitment import Confirmed, Finalized, Processed
+from solanasdk.rpc.core import RPCException, TransactionExpiredBlockheightExceededError
+from solanasdk.rpc.types import DataSliceOpts, TxOpts
+from solanasdk.transaction import Transaction
 
 from ..utils import AIRDROP_AMOUNT, assert_valid_response
 

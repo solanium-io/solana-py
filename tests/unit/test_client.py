@@ -9,8 +9,8 @@ from solders.rpc.config import RpcSignaturesForAddressConfig
 from solders.rpc.requests import GetSignaturesForAddress
 from solders.signature import Signature
 
-from solana.exceptions import SolanaRpcException
-from solana.rpc.commitment import Finalized
+from solanasdk.exceptions import SolanaRpcException
+from solanasdk.rpc.commitment import Finalized
 
 
 def test_client_http_exception(unit_test_http_client):

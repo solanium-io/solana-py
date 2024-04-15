@@ -104,7 +104,7 @@ class AsyncHTTPProvider(AsyncBaseProvider, _HTTPProviderCore):
                 Note: ``parsers`` should line up with ``reqs``.
 
         Example:
-            >>> from solana.rpc.providers.async_http import AsyncHTTPProvider
+            >>> from solanasdk.rpc.providers.async_http import AsyncHTTPProvider
             >>> from solders.rpc.requests import GetBlockHeight, GetFirstAvailableBlock
             >>> from solders.rpc.responses import GetBlockHeightResp, GetFirstAvailableBlockResp
             >>> provider = AsyncHTTPProvider("https://api.devnet.solana.com")

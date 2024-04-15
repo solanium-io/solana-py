@@ -1,6 +1,6 @@
 """Test cluster_api_url."""
 
-from solana.utils.cluster import cluster_api_url
+from solanasdk.utils.cluster import cluster_api_url
 
 
 def test_input_output():

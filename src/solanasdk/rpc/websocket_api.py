@@ -43,9 +43,9 @@ from solders.signature import Signature
 from websockets.legacy.client import WebSocketClientProtocol
 from websockets.legacy.client import connect as ws_connect
 
-from solana.rpc import types
-from solana.rpc.commitment import Commitment
-from solana.rpc.core import _ACCOUNT_ENCODING_TO_SOLDERS, _COMMITMENT_TO_SOLDERS
+from solanasdk.rpc import types
+from solanasdk.rpc.commitment import Commitment
+from solanasdk.rpc.core import _ACCOUNT_ENCODING_TO_SOLDERS, _COMMITMENT_TO_SOLDERS
 
 
 class SubscriptionError(Exception):

@@ -3,8 +3,8 @@ from typing import get_args
 
 from solders.rpc.responses import RPCError, RPCResult
 
-from solana.rpc.commitment import Processed
-from solana.rpc.types import TxOpts
+from solanasdk.rpc.commitment import Processed
+from solanasdk.rpc.types import TxOpts
 
 AIRDROP_AMOUNT = 10_000_000_000
 

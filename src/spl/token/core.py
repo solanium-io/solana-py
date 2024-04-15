@@ -10,11 +10,11 @@ from solders.pubkey import Pubkey
 from solders.rpc.responses import GetAccountInfoResp
 
 import spl.token.instructions as spl_token
-from solana.rpc.api import Client
-from solana.rpc.async_api import AsyncClient
-from solana.rpc.commitment import Commitment
-from solana.rpc.types import TokenAccountOpts, TxOpts
-from solana.transaction import Transaction
+from solanasdk.rpc.api import Client
+from solanasdk.rpc.async_api import AsyncClient
+from solanasdk.rpc.commitment import Commitment
+from solanasdk.rpc.types import TokenAccountOpts, TxOpts
+from solanasdk.transaction import Transaction
 from spl.token._layouts import ACCOUNT_LAYOUT, MINT_LAYOUT, MULTISIG_LAYOUT  # type: ignore
 from spl.token.constants import WRAPPED_SOL_MINT
 

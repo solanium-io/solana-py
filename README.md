@@ -60,7 +60,7 @@ import solana
 ### API Client
 
 ```py
-from solana.rpc.api import Client
+from solanasdk.rpc.api import Client
 
 http_client = Client("https://api.devnet.solana.com")
 ```
@@ -69,7 +69,7 @@ http_client = Client("https://api.devnet.solana.com")
 
 ```py
 import asyncio
-from solana.rpc.async_api import AsyncClient
+from solanasdk.rpc.async_api import AsyncClient
 
 async def main():
     async with AsyncClient("https://api.devnet.solana.com") as client:
@@ -90,7 +90,7 @@ asyncio.run(main())
 ```py
 import asyncio
 from asyncstdlib import enumerate
-from solana.rpc.websocket_api import connect
+from solanasdk.rpc.websocket_api import connect
 
 async def main():
     async with connect("wss://api.devnet.solana.com") as websocket:

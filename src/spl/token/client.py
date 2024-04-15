@@ -17,9 +17,9 @@ from solders.rpc.responses import (
 )
 
 import spl.token.instructions as spl_token
-from solana.rpc.api import Client
-from solana.rpc.commitment import Commitment
-from solana.rpc.types import TxOpts
+from solanasdk.rpc.api import Client
+from solanasdk.rpc.commitment import Commitment
+from solanasdk.rpc.types import TxOpts
 from spl.token._layouts import ACCOUNT_LAYOUT, MINT_LAYOUT, MULTISIG_LAYOUT
 from spl.token.core import AccountInfo, MintInfo, _TokenCore
 

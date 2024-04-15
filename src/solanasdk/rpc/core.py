@@ -80,8 +80,8 @@ from solders.signature import Signature
 from solders.transaction import VersionedTransaction
 from solders.transaction_status import UiTransactionEncoding
 
-from solana.rpc import types
-from solana.transaction import Transaction
+from solanasdk.rpc import types
+from solanasdk.transaction import Transaction
 
 from .commitment import Commitment, Confirmed, Finalized, Processed
 

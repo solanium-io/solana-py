@@ -61,8 +61,8 @@ from solders.rpc.responses import (
 from solders.signature import Signature
 from solders.transaction import VersionedTransaction
 
-from solana.rpc import types
-from solana.transaction import Transaction
+from solanasdk.rpc import types
+from solanasdk.transaction import Transaction
 
 from .commitment import Commitment, Finalized
 from .core import (
@@ -419,7 +419,7 @@ class AsyncClient(_ClientCore):  # pylint: disable=too-many-public-methods
         Example:
             >>> from solders.keypair import Keypair
             >>> from solders.system_program import TransferParams, transfer
-            >>> from solana.transaction import Transaction
+            >>> from solanasdk.transaction import Transaction
             >>> leading_zeros = [0] * 31
             >>> sender, receiver = Keypair.from_seed(leading_zeros + [1]), Keypair.from_seed(leading_zeros + [2])
             >>> txn = Transaction().add(transfer(TransferParams(
@@ -1029,7 +1029,7 @@ class AsyncClient(_ClientCore):  # pylint: disable=too-many-public-methods
         Example:
             >>> from solders.keypair import Keypair
             >>> from solders.system_program import TransferParams, transfer
-            >>> from solana.transaction import Transaction
+            >>> from solanasdk.transaction import Transaction
             >>> leading_zeros = [0] * 31
             >>> sender, receiver = Keypair.from_seed(leading_zeros + [1]), Keypair.from_seed(leading_zeros + [2])
             >>> txn = Transaction().add(transfer(TransferParams(

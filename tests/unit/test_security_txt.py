@@ -2,7 +2,7 @@
 
 import pytest
 
-from solana.utils.security_txt import NoSecurityTxtFoundError, parse_security_txt
+from solanasdk.utils.security_txt import NoSecurityTxtFoundError, parse_security_txt
 
 
 def test_parse_security_text():

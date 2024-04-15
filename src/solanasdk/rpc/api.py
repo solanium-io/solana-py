@@ -63,8 +63,8 @@ from solders.rpc.responses import (
 from solders.signature import Signature
 from solders.transaction import VersionedTransaction
 
-from solana.rpc import types
-from solana.transaction import Transaction
+from solanasdk.rpc import types
+from solanasdk.transaction import Transaction
 
 from .commitment import Commitment, Finalized
 from .core import (
@@ -407,7 +407,7 @@ class Client(_ClientCore):  # pylint: disable=too-many-public-methods
         Example:
             >>> from solders.keypair import Keypair
             >>> from solders.system_program import TransferParams, transfer
-            >>> from solana.transaction import Transaction
+            >>> from solanasdk.transaction import Transaction
             >>> leading_zeros = [0] * 31
             >>> sender, receiver = Keypair.from_seed(leading_zeros + [1]), Keypair.from_seed(leading_zeros + [2])
             >>> txn = Transaction().add(transfer(TransferParams(
@@ -631,7 +631,7 @@ class Client(_ClientCore):  # pylint: disable=too-many-public-methods
                 Note: an int entry is converted to a `dataSize` filter.
 
         Example:
-            >>> from solana.rpc.types import MemcmpOpts
+            >>> from solanasdk.rpc.types import MemcmpOpts
             >>> from typing import List, Union
             >>> solana_client = Client("http://localhost:8899")
             >>> memcmp_opts = MemcmpOpts(offset=4, bytes="3Mc6vR")
@@ -664,7 +664,7 @@ class Client(_ClientCore):  # pylint: disable=too-many-public-methods
                 Note: an int entry is converted to a `dataSize` filter.
 
         Example:
-            >>> from solana.rpc.types import MemcmpOpts
+            >>> from solanasdk.rpc.types import MemcmpOpts
             >>> from typing import List, Union
             >>> solana_client = Client("http://localhost:8899")
             >>> memcmp_opts = MemcmpOpts(offset=4, bytes="3Mc6vR")
@@ -1016,9 +1016,9 @@ class Client(_ClientCore):  # pylint: disable=too-many-public-methods
         Example:
             >>> from solders.keypair import Keypair
             >>> from solders.pubkey import Pubkey
-            >>> from solana.rpc.api import Client
+            >>> from solanasdk.rpc.api import Client
             >>> from solders.system_program import TransferParams, transfer
-            >>> from solana.transaction import Transaction
+            >>> from solanasdk.transaction import Transaction
             >>> leading_zeros = [0] * 31
             >>> sender, receiver = Keypair.from_seed(leading_zeros + [1]), Keypair.from_seed(leading_zeros + [2])
             >>> txn = Transaction().add(transfer(TransferParams(

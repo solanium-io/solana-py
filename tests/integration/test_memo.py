@@ -5,9 +5,9 @@ from solders.transaction_status import ParsedInstruction
 from spl.memo.constants import MEMO_PROGRAM_ID
 from spl.memo.instructions import MemoParams, create_memo
 
-from solana.rpc.api import Client
-from solana.rpc.commitment import Finalized
-from solana.transaction import Transaction
+from solanasdk.rpc.api import Client
+from solanasdk.rpc.commitment import Finalized
+from solanasdk.transaction import Transaction
 
 from ..utils import AIRDROP_AMOUNT, assert_valid_response
 

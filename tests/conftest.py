@@ -8,9 +8,9 @@ from solders.hash import Hash as Blockhash
 from solders.keypair import Keypair
 from solders.pubkey import Pubkey
 
-from solana.rpc.api import Client
-from solana.rpc.async_api import AsyncClient
-from solana.rpc.commitment import Processed
+from solanasdk.rpc.api import Client
+from solanasdk.rpc.async_api import AsyncClient
+from solanasdk.rpc.commitment import Processed
 from tests.utils import AIRDROP_AMOUNT, assert_valid_response
 
 
