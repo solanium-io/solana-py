@@ -20,7 +20,7 @@ classifiers = [
     "Programming Language :: Python :: 3.9",
 ]
 packages = [
-    { include = "solana", from = "src" },
+    { include = "solanasdk", from = "src" },
     { include = "spl", from = "src" },
 ]
 
